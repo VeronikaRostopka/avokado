@@ -1,0 +1,335 @@
+/* Ретро зелена тема */
+:root {
+  --retro-green-dark: #1a4731;
+  --retro-green: #2d8659;
+  --retro-green-light: #3dcc7f;
+  --retro-mint: #98ff98;
+  --retro-yellow: #f0e68c;
+}
+
+body {
+  background-color: #e8f5e9;
+  background-image: linear-gradient(
+      90deg,
+      rgba(45, 134, 89, 0.07) 50%,
+      transparent 50%
+    ),
+    linear-gradient(90deg, rgba(45, 134, 89, 0.13) 50%, transparent 50%);
+  background-size: 13px, 29px;
+  color: var(--retro-green-dark);
+  font-family: "Comic Sans MS", cursive;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Шапка */
+header {
+  background-color: var(--retro-green);
+  border-bottom: 4px solid var(--retro-green-dark);
+  box-shadow: 0 4px 0 #0a2718;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 80px;
+  border: 3px solid var(--retro-green-dark);
+  border-radius: 50%;
+  padding: 5px;
+  background: var(--retro-mint);
+  box-shadow: 3px 3px 0 var(--retro-green-dark);
+}
+
+.logo h1 {
+  color: #ffffff;
+  font-size: 38px;
+  text-shadow: 3px 3px 0 var(--retro-green-dark), -2px -2px 0 var(--retro-mint);
+  letter-spacing: 2px;
+}
+
+/* Головний банер */
+.hero {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--retro-green),
+    var(--retro-green) 10px,
+    var(--retro-green-light) 10px,
+    var(--retro-green-light) 20px
+  );
+  padding: 80px 0;
+  border-bottom: 4px solid var(--retro-green-dark);
+}
+
+.hero h2 {
+  color: #ffffff;
+  font-size: 46px;
+  text-shadow: 3px 3px 0 var(--retro-green-dark), 6px 6px 0 var(--retro-mint);
+  margin-bottom: 30px;
+  transform: rotate(-2deg);
+}
+
+.hero p {
+  background: var(--retro-mint);
+  display: inline-block;
+  padding: 15px 30px;
+  border: 3px solid var(--retro-green-dark);
+  box-shadow: 5px 5px 0 var(--retro-green-dark);
+  transform: rotate(2deg);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--retro-green-dark);
+}
+
+/* Переваги */
+.benefits {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.benefits .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.benefit-item {
+  text-align: center;
+  background: var(--retro-green);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 var(--retro-green-dark);
+  transition: all 0.3s ease;
+  border: 3px solid var(--retro-green-dark);
+}
+
+.benefit-item:nth-child(2) {
+  background: var(--retro-green-light);
+  transform: rotate(1deg);
+}
+
+.benefit-item:nth-child(3) {
+  background: var(--retro-yellow);
+  transform: rotate(-1deg);
+}
+
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--retro-green-dark);
+  box-shadow: 4px 4px 0 var(--retro-green-dark);
+  transition: all 0.3s ease;
+}
+
+.benefit-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--retro-green-dark);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 12px 0 var(--retro-green-dark);
+}
+
+.benefit-item:hover .benefit-icon {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 0 var(--retro-green-dark);
+}
+
+.benefit-item p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 var(--retro-green-dark);
+}
+
+/* Контакти */
+.contacts {
+  background: var(--retro-green);
+  padding: 70px 0;
+  border-top: 4px solid var(--retro-green-dark);
+  border-bottom: 4px solid var(--retro-green-dark);
+}
+
+.contacts h2 {
+  color: #ffffff;
+  font-size: 42px;
+  text-shadow: 3px 3px 0 var(--retro-green-dark), 6px 6px 0 var(--retro-mint);
+}
+
+.contacts p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contacts a {
+  background: var(--retro-mint);
+  color: var(--retro-green-dark);
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 3px solid var(--retro-green-dark);
+  box-shadow: 4px 4px 0 var(--retro-green-dark);
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+.contacts a:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--retro-green-dark);
+  background: #ffffff;
+}
+
+.qr-code {
+  border: 3px solid var(--retro-green-dark);
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 8px 8px 0 var(--retro-green-dark);
+  transform: rotate(2deg);
+}
+
+/* Футер */
+footer {
+  background: var(--retro-green-dark);
+  color: #ffffff;
+  border-top: 4px solid var(--retro-green);
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+}
+
+.social-link span {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: var(--retro-green);
+  border: 3px solid var(--retro-green-dark);
+  border-radius: 50%;
+  box-shadow: 4px 4px 0 #0a2718;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 0 #0a2718;
+  background: var(--retro-green-light);
+}
+
+.social-link:hover span {
+  transform: translateY(-3px);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+/* Явно встановлюємо білий колір для шляхів SVG */
+.social-icon svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .benefits .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-item {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .contacts h2 {
+    font-size: 28px;
+  }
+
+  .contacts p {
+    font-size: 18px;
+  }
+
+  .qr-code {
+    width: 150px;
+  }
+
+  .benefit-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .benefit-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .benefit-item p {
+    font-size: 18px;
+  }
+}
